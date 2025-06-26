@@ -39,7 +39,7 @@ const Coin = () => {
   useEffect(()=>{
     fetchCoinData();
     fetchHistoricalData();
-  },[currency])
+  },[currency, coinId])
 
   if(coinData, historicalData){
     return (
