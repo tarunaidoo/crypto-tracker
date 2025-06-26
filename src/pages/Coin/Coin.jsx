@@ -77,7 +77,7 @@ const Coin = () => {
 
       </div>
     )
-  }else{
+  }else if (!coinData || !historicalData){
     return (
       <div className="spinner">
         <div className="spin"></div>
